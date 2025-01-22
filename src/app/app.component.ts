@@ -85,7 +85,7 @@ export class AppComponent implements OnInit{
         this.widocznoscTak = true
         console.log(dane)
         this.getWeekArray()
-        this.szansaNaOpady = dane.days[0].precipprob;
+        this.szansaNaOpady = dane.currentConditions.precipprob;
         this.maksymalnaTemperatura = dane.days[0].tempmax;
         this.temperatura0 = dane.days[0].hours[0].temp;
         this.temperatura1 = dane.days[0].hours[1].temp;
